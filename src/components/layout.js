@@ -82,7 +82,13 @@ const LayoutComponent = ({ children, title, route }) => {
   };
   return (
     <Layout style={{ height: "100vh" }}>
-      <Sider trigger={null} collapsible collapsed={collapsed}>
+      <Sider
+        width={250}
+        className="overflow-y-auto"
+        trigger={null}
+        collapsible
+        collapsed={collapsed}
+      >
         <div className="demo-logo-vertical" />
         <div className="flex justify-center m-2">
           <Image
